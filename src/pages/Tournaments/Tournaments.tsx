@@ -1,7 +1,12 @@
-import React from "react";
+import Header from "../../components/Header/Header";
 
 const Tournaments = () => {
-  return <div>Tournaments</div>;
+  return (
+    <>
+      <Header />
+      <h1>Tournaments</h1>
+    </>
+  );
 };
 
 export default Tournaments;

@@ -1,14 +1,17 @@
 import { Container } from "./style";
 import logo from "../../assets/logo.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <Container>
-      <img src={logo} alt="logo" />
+      <Link to="/">
+        <img src={logo} alt="logo" />
+      </Link>
       <div className="list">
-        <a href="/tournaments">Tournaments</a>
-        <a href="/teams">Teams</a>
-        <a href="/players">Players</a>
+        <Link to="/tournaments">Tournaments</Link>
+        <Link to="/teams">Teams</Link>
+        <Link to="/players">Players</Link>
       </div>
     </Container>
   );
