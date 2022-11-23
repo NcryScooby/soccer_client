@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import MulishRegular from "../fonts/Mulish-Regular.ttf";
 import MulishBold from "../fonts/Mulish-Bold.ttf";
-import abstract from "../assets/background.svg";
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -20,16 +19,12 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: "Mulish", sans-serif;
-    color: #fff;
+    color: #232323;
   }
 
-  body {
-    background-image: url(${abstract});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    
+
+  body {  
+    background: #F5F5F5;
   }
 `;
 

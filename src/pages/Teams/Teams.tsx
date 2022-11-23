@@ -5,10 +5,10 @@ import { Container } from "./style";
 
 interface Team {
   id: number;
-  team_name: string;
-  tournament_name: string;
-  country_name: string;
-  continent_name: string;
+  team: string;
+  tournament: string;
+  country: string;
+  continent: string;
 }
 
 const Teams = () => {
@@ -27,8 +27,9 @@ const Teams = () => {
     <>
       <Header />
       <Container>
+        {console.log(teams)}
         {teams.teams?.map((team: Team) => (
-          <p key={team.id}>{team.team_name}</p>
+          <p key={team.id}>{team.team}</p>
         ))}
       </Container>
     </>
