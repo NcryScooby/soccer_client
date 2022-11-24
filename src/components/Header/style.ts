@@ -11,6 +11,7 @@ export const Container = styled.header`
   @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
+    gap: 2rem;
   }
 
   .wave {
